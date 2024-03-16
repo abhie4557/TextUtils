@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+<!--Template works.! Using dictionary from views{{ name }} is from {{ place }}-->
+<h1>Welcome to the Text Analyzer<br>Enter your text below :</h1>
+<form action='/analyze' method='get'>
+    <textarea name='text' style="width: 1237px; height: 118px;" ></textarea> <br>
+    <input type="checkbox" name="removepunc">Remove Punctuations</input><br>
+    <input type="checkbox" name="fullcaps">CAPITALIZE</input><br>
+    <input type="checkbox" name="newlineremove">Remove New Lines</input><br>
+    <input type="checkbox" name="spaceremove">Remove Extra Spaces</input><br>
+    <input type="checkbox" name="charcount">Count Characters</input><br>
+    <button type='submit' >Analyze text</button>
+</form>
+
+</body>
+</html>
